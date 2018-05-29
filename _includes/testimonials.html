@@ -1,0 +1,21 @@
+<section class="wrapper">
+	<div class="inner">
+		<header class="special">
+			<h2>{% translate testimonials_title %}</h2>
+		</header>
+		<div class="testimonials">
+			{% for testimonial in site.data.testimonials[page.language] %}
+			<section>
+				<div class="content">
+					<blockquote>
+						<p>{{ testimonial.text }}</p>
+					</blockquote>
+					<div class="author">
+						<p class="credit">- <strong>{{ testimonial.name }}</strong> <span>{{ testimonial.city }}</span></p>
+					</div>
+				</div>
+			</section>
+			{% endfor %}
+		</div>
+	</div>
+</section>

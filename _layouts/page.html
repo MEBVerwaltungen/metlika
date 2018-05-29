@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Metlika - Ferienhäuser - {{ page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		{% include style_sheets.html %}
+	</head>
+	<body class="is-preload">
+		<header id="header">
+			<a class="logo" href="/">{% translate site_name %}</a>
+			{% include languages.html %}
+			<nav>
+				<a href="#menu">{% translate menu %}</a>
+			</nav>
+		</header>
+		{% include menu.html %}
+		<div id="heading" >
+			<h1>{{ page.title }}</h1>
+		</div>
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<div class="content">
+					{{ content }}
+				</div>
+			</div>
+		</section>
+		{% include footer.html %}
+		{% include scripts.html %}
+	</body>
+</html>

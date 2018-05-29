@@ -1,0 +1,10 @@
+<nav id="menu">
+	<ul class="links">
+		{% assign pages = site.pages | sort: 'sort_order' %}
+		{% for p in pages %}
+		{% if p.language == page.language and p.title.size > 0 %}
+		<li><a href="{{ p.url }}">{{ p.title }}</a></li>
+		{% endif  %}
+		{% endfor %}
+	</ul>
+</nav>

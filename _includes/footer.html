@@ -1,0 +1,32 @@
+<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<section>
+				<h3>{% translate about_us_title %}</h3>
+				<p>{% translate about_us %}</p>
+			</section>
+			<section>
+				<h4>{% translate site_map %}</h4>
+				<ul class="alt">
+					{% assign pages = site.pages | sort: 'sort_order' %}
+					{% for p in pages %}
+					{% if p.language == page.language and p.title.size > 0 %}
+					<li><a href="{{ p.url }}">{{ p.title }}</a></li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+			<!--section>
+				<h4>{% translate social_media %}</h4>
+				<ul class="plain">
+					<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+				</ul>
+			</section-->
+		</div>
+		<div class="copyright">
+			&copy; MEB-Verwaltungen 2018. Web by <a target="_blank" href="https://www.github.com/calleo">calleo</a>. Template courtesy of <a target="_blank" href="https://templated.co/">TEMPLATED</a>.
+		</div>
+	</div>
+</footer>

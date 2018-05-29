@@ -1,0 +1,32 @@
+{
+	"en": {
+		"site_title": "Metlika",
+		"site_preamble": "Holiday homes in Slovenia",
+		"site_name": "Metlika - Holiday Homes",
+		"highlights_title": "Vaction for everyone",
+		"highlights_preamble": "Young or not, Metlika offers something for everyone!",
+		"cta_title": "Book your holiday home",
+		"cta_button_text": "Book now!",
+		"testimonials_title": "Words from our guests",
+		"about_us_title": "About us",
+		"about_us": "MEB VERWALTUNGEN GmbH & Co. KG. <br/><a href=\"http://www.meb-verwaltungen.de/\" _target=\"_blank\">www.meb-verwaltungen.de</a>",
+		"menu": "Menu",
+		"social_media": "Social media",
+		"site_map": "Site map",
+	},
+	"de": {
+		"site_title": "Metlika",
+		"site_preamble": "Ferienhäuser in Slovenien",
+		"site_name": "Metlika - Ferienhäuser",
+		"highlights_title": "Das Urlaubsziel für alle",
+		"highlights_preamble": "Jung oder nicht, hier gibt es etwas für jeden!",
+		"cta_title": "Buchen Sie Ihr Ferienhaus",
+		"cta_button_text": "Jetzt buchen!",
+		"testimonials_title": "Das sagen unsere Gäste",
+		"about_us_title": "Über uns",
+		"about_us": "MEB VERWALTUNGEN GmbH & Co. KG. <br/><a href=\"http://www.meb-verwaltungen.de/\" _target=\"_blank\">www.meb-verwaltungen.de</a>",
+		"menu": "Menü",
+		"social_media": "Sozialen Medien",
+		"site_map": "Sitemap",
+	}
+}

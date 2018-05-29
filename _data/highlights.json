@@ -1,0 +1,36 @@
+{
+	"de" : [
+		{
+			"title": "Wandern",
+			"icon": "fa-tree",
+			"description": "Geniß die Berge",
+		},
+		{
+			"title": "Schwimmen",
+			"icon": "fa-tint",
+			"description": "Warmes wasser",
+		},
+		{
+			"title": "Essen",
+			"icon": "fa-cutlery",
+			"description": "Regionale Küche",
+		},
+	],
+	"en" : [
+		{
+			"title": "Hike",
+			"icon": "fa-tree",
+			"description": "Fabulous mountains",
+		},
+		{
+			"title": "Swim",
+			"icon": "fa-tint",
+			"description": "Warm water",
+		},
+		{
+			"title": "Eat",
+			"icon": "fa-cutlery",
+			"description": "Regional food",
+		},
+	]
+}

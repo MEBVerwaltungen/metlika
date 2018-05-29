@@ -1,0 +1,36 @@
+{
+	"de" : [
+		{
+			"text": "Das Wasser war immer warm!",
+			"name": "Klaus",
+			"city": "München",
+		},
+		{
+			"text": "Die Sonne schien ununterbrochen!",
+			"name": "Angela",
+			"city": "München",
+		},
+		{
+			"text": "Ich liebe die Berge in Metlika!",
+			"name": "Bettina",
+			"city": "Berlin",
+		},
+	],
+	"en" : [
+		{
+			"text": "Water was fantasic!",
+			"name": "Klaus",
+			"city": "Munich",
+		},
+		{
+			"text": "Sun shined every day",
+			"name": "Angela",
+			"city": "Munich",
+		},
+		{
+			"text": "I love the mountains around Metlika!",
+			"name": "Bettina",
+			"city": "Berlin",
+		},
+	]
+}
