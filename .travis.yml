@@ -1,0 +1,8 @@
+language: ruby
+script:
+  - bundle exec jekyll build
+deploy:
+  provider: surge
+  project: _site
+  domain: metlika.eu
+  skip_cleanup: true
