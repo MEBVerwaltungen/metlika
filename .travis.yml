@@ -1,6 +1,5 @@
 language: ruby
 script:
-  - echo "test test"
   - bundle exec jekyll build
 deploy:
   provider: surge
