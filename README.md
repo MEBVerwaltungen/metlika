@@ -38,4 +38,16 @@ Contains the texts (and their translations) for the start page (and a few terms 
 
 This folder contains all sub-pages. The pages are separated into sub-folders, one folder for each language.
 
-Page will automatically appear in the menu.
+Pages will automatically appear in the menu.
+
+To create a new page, create a new file with the extension .md. Add the [FrontMatter](https://jekyllrb.com/docs/frontmatter/) settings at the top of the new file:
+
+`
+---
+title: Put the page title here, i.e. Impressium
+layout: page
+sort_order: 100
+---
+`
+
+'layout' should always be 'page'. 'sort_order' determines where in the menu this page should appear (low to high). 
