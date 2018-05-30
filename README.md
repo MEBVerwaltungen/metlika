@@ -21,4 +21,21 @@ This is done automatically using [travis-ci](https://travis-ci.org/). See [.trav
 
 ## Content Management
 
-See [wiki](https://github.com/calleo/metlika/wiki).
+Content is paced in two folders:
+
+* \_data
+* \_pages
+
+### \_data
+
+Contains the texts (and their translations) for the start page (and a few terms that are displayed on the other pages). The folder contains three files:
+
+* highlights.json - highlights displayed on the start page and their translations
+* testimonials.json - testimonials displayed on the start page and their translations
+* translations.json - title and other terms used on the start page and other pages
+
+### \_pages
+
+This folder contains all sub-pages. The pages are separated into sub-folders, one folder for each language.
+
+Page will automatically appear in the menu.
