@@ -1,5 +1,5 @@
 # Metlika
-Source code for site hosted at metlika.eu
+Source code for site hosted at http://metlika.eu
 
 ## Architecture
 
