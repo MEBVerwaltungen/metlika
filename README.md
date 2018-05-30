@@ -56,4 +56,4 @@ To create a new page, create a new file with the extension .md. Add the [FrontMa
 
 ## Images
 
-There are a few images on the web site, they are all stored in the folder [images](https://github.com/calleo/metlika/tree/master/images). The change an image, delete the file you whish to change and upload a new image with identical name as the one you deleted.
+There are a few images on the web site, they are all stored in the folder [images](https://github.com/calleo/metlika/tree/master/images). To change an image, delete the file you whish to change and upload a new image with identical name as the one you deleted.
