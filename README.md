@@ -42,12 +42,18 @@ Pages will automatically appear in the menu.
 
 To create a new page, create a new file with the extension .md. Add the [FrontMatter](https://jekyllrb.com/docs/frontmatter/) settings at the top of the new file:
 
-`
----
-title: Put the page title here, i.e. Impressium
-layout: page
-sort_order: 100
----
-`
+`---`
+
+`title: Put the page title here, i.e. Impressium`
+
+`layout: page`
+
+`sort_order: 100`
+
+`---`
 
 'layout' should always be 'page'. 'sort_order' determines where in the menu this page should appear (low to high). 
+
+## Images
+
+There are a few images on the web site, they are all stored in the folder [images](https://github.com/calleo/metlika/tree/master/images). The change an image, delete the file you whish to change and upload a new image with identical name as the one you deleted.
