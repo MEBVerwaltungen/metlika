@@ -3,6 +3,6 @@ script:
   - bundle exec jekyll build
 deploy:
   provider: surge
-  project: _site
+  project: offline
   domain: metlika.eu
   skip_cleanup: true
