@@ -1,0 +1,39 @@
+{
+  "name": "metlika",
+  "version": "1.0.0",
+  "description": "Metlika",
+  "main": "index.js",
+  "mode": "development",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/calleo/metlika.git"
+  },
+  "author": "Carl Vander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/calleo/metlika/issues"
+  },
+  "homepage": "https://github.com/calleo/metlika#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "moment": "^2.22.2",
+    "moment-range": "^3.0.3",
+    "react": "^16.4.1",
+    "react-daterange-picker": "^2.0.1",
+    "react-dom": "^16.4.1",
+    "react-modal": "^3.5.1",
+    "react-router-dom": "^4.3.1",
+    "snakecase-keys": "^1.2.0",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-command": "^0.4.1"
+  }
+}

@@ -1,3 +1,4 @@
 name: Metlika Ferienhäuser
 default_language: de
 include: ["_pages"]
+exclude: ["node_modules", "webpack", "vendor", "Gemfile", "Gemfile.lock", "package.json", "README.md"]

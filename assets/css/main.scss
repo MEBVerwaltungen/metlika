@@ -2842,3 +2842,11 @@ body.is-menu-visible #menu {
   transform: translateX(0);
   box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.2);
   visibility: visible; }
+
+.ReactModal__Overlay {
+    z-index: 1000;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}

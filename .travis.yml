@@ -1,8 +1,9 @@
 language: ruby
 script:
+  - webpack
   - bundle exec jekyll build
 deploy:
   provider: surge
-  project: offline
-  domain: metlika.eu
+  project: _site
+  domain: beta.metlika.eu
   skip_cleanup: true
