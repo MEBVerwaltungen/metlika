@@ -8,5 +8,5 @@ script:
 deploy:
   provider: surge
   project: _site
-  domain: beta.metlika.eu
+  domain: metlika.surge.sh
   skip_cleanup: true
