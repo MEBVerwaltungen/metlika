@@ -6,7 +6,7 @@ class ResidenceService {
 
 	getResidences() {
 		return new Promise((resolve, reject) => {
-			fetch("http://localhost:3000/residences").then(res => {
+			fetch(__API__ + "/residences").then(res => {
 		        res.json().then(json => {
 		        	/* TODO: Reject! */
 		        	resolve(this.expandRelations(json.data, json.included));
@@ -17,7 +17,7 @@ class ResidenceService {
 
 	getResidence(id) {
 		return new Promise((resolve, reject) => {
-			fetch("http://localhost:3000/residences/"+id).then(res => {
+			fetch(__API__ + "/residences/"+id).then(res => {
 		        res.json().then(json => {
 		        	/* TODO: Reject! */
 		        	resolve(this.expandRelations([json.data], json.included)[0]);
@@ -28,7 +28,7 @@ class ResidenceService {
 
 	getResidenceBlockedDays(id) {
 		return new Promise((resolve, reject) => {
-			fetch("http://localhost:3000/residences/"+id+"/blocked_days").then(res => {
+			fetch(__API__ + "/residences/"+id+"/blocked_days").then(res => {
 		        res.json().then(json => {
 		        	resolve(json.data.attributes.blocked_days);
 	          	})

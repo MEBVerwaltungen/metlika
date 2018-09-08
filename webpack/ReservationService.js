@@ -2,7 +2,7 @@ class ReservationService {
 
 	createReservation(reservation, success, error) {
 		return fetch(
-			"http://localhost:3000/reservations",
+			__API__ + "/reservations",
 			{
 				method: 'POST',
 				body: this.asJson(reservation),

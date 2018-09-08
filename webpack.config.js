@@ -1,10 +1,24 @@
 const path = require('path');
+const webpack = require('webpack');
+
+var apiHost;
+
+function setupApi() {
+  switch (process.env.NODE_ENV) {
+    case 'production':
+      apiHost = "'https://meb-admin.herokuapp.com'";
+      break;
+    default:
+      apiHost = "'http://localhost:3000'";
+      break;
+  }
+}
+
+setupApi();
 
 module.exports = {
-  // webpack folder’s entry js — excluded from jekyll’s build process.
   entry: './webpack/entry.js',
   output: {
-    // we’re going to put the generated file in the assets folder so jekyll will grab it.
     path: path.resolve(__dirname, 'assets', 'js'),
     filename: 'bundle.js'
   },
@@ -13,7 +27,7 @@ module.exports = {
     {
       test: /\.jsx?$/,
       exclude: /(node_modules)/,
-      loader: 'babel-loader', // ‘babel-loader’ is also a legal name to reference
+      loader: 'babel-loader',
       query: {
         presets: ['react', 'es2015']
       }
@@ -24,5 +38,8 @@ module.exports = {
     }
     ]
   },
+  plugins: [
+    new webpack.DefinePlugin({__API__: apiHost})
+  ],
   "devtool": "source-map"
 };

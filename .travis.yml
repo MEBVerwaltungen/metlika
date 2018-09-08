@@ -1,6 +1,9 @@
 language: ruby
 script:
-  - webpack
+  - npm install webpack -g
+  - npm install webpack-cli -g
+  - npm install
+  - NODE_ENV=production webpack --mode=production
   - bundle exec jekyll build
 deploy:
   provider: surge
