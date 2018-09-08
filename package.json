@@ -28,6 +28,7 @@
     "react": "^16.4.1",
     "react-daterange-picker": "^2.0.1",
     "react-dom": "^16.4.1",
+    "react-lightbox-component": "^1.2.1",
     "react-modal": "^3.5.1",
     "react-router-dom": "^4.3.1",
     "snakecase-keys": "^1.2.0",

@@ -2850,3 +2850,19 @@ body.is-menu-visible #menu {
 .ReactModal__Body--open {
   overflow: hidden;
 }
+
+.lightbox-backdrop {
+  /* make sure lightbox appears on top of menu */
+  z-index: 100000 !important;
+}
+
+.lightbox-btn, .lightbox-btn:hover {
+  box-shadow: none;
+}
+
+.lightbox-description {
+  /* hide description since images do not have any */
+  display: none;
+}
+
+

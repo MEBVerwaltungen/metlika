@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import ResidenceService from './ResidenceService'
 import {withRouter} from 'react-router';
 import {Link} from 'react-router-dom'
+import Lightbox from 'react-lightbox-component';
+import 'react-lightbox-component/build/css/index.css';
 
 class ResidenceViewer extends Component {
 
@@ -11,11 +13,6 @@ class ResidenceViewer extends Component {
             galleryIsOpen: false,
             residence: {description: {text: ''}}
         };
-        this.closeGallery = this.closeGallery.bind(this);
-    }
-
-    closeGallery(){
-
     }
 
     render() {
@@ -25,7 +22,7 @@ class ResidenceViewer extends Component {
                 {
                     src: __API__ + i.url,
                     thumbnail: __API__ + i.thumbnail,
-                    srcSet: []
+                    title: this.state.residence.name
                 }));
         }
         return (
@@ -33,8 +30,22 @@ class ResidenceViewer extends Component {
                 <h1>{this.state.residence.name}</h1>
                 <p>{this.state.residence.description.text}</p>
                 <div>
+                    <Lightbox
+                        images={images}
+                        renderImageFunc={(idx, image, toggleLightbox, width, height) => {
+                            return (
+                                <img
+                                    key={idx}
+                                    className="lightbox-img-thumbnail"
+                                    src={image.thumbnail}
+                                    onClick={toggleLightbox.bind(null, idx)} />
+                            )
+                        }}
+                    />
                 </div>
-                <p><Link to={`/residences/${this.state.residence.id}/book`}>Book now</Link></p>
+                <p>
+                    <Link to={`/residences/${this.state.residence.id}/book`}>Book now</Link>
+                </p>
             </div>
         );
     }
