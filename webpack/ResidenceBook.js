@@ -66,6 +66,8 @@ class ResidenceBook extends Component {
     this.onDateSelect = this.onDateSelect.bind(this);
     this.getModalParent = this.getModalParent.bind(this);
     this.closeModal = this.closeModal.bind(this);
+    this.showAgreementError = this.showAgreementError.bind(this);
+    this.showBookingDurationError = this.showBookingDurationError.bind(this);
   }
 
   onDateSelect(dates) {
@@ -99,8 +101,28 @@ class ResidenceBook extends Component {
     this.setState({successModalIsOpen: true});
   }
 
+  showBookingDurationError(){
+      this.setState({
+          validationModalIsOpen: true,
+          validationErrorMessage: 'Please select check-in and check-out dates using the calendar.'
+      })
+  }
+
+  showAgreementError() {
+    this.setState({
+        validationModalIsOpen: true,
+        validationErrorMessage: 'Please read and accept the booking agreement and privacy policy before submitting the inquiry.'
+    })
+  }
+
   handleSubmit(event) {
-    new ReservationService().createReservation(this.state.reservation, this.handleSuccess, this.handleError);
+    if (this.state.reservation.agreementAccepted !== true) {
+        this.showAgreementError();
+    } else if (this.state.reservation.checkIn === '' || this.state.reservation.checkOut === '') {
+        this.showBookingDurationError();
+    } else {
+        new ReservationService().createReservation(this.state.reservation, this.handleSuccess, this.handleError);
+    }
     event.preventDefault();
   }
 
@@ -119,7 +141,7 @@ class ResidenceBook extends Component {
   }
 
   closeModal() {
-    this.setState({successModalIsOpen: false, errorModalIsOpen: false});
+    this.setState({successModalIsOpen: false, errorModalIsOpen: false, validationModalIsOpen: false});
   }
 
   /*closeSuccessModal() {
@@ -169,6 +191,7 @@ class ResidenceBook extends Component {
             </div>
           </div>
 
+          <p/>
           <h2>Guests</h2>
 
           <div className="row gtr-uniform">
@@ -195,6 +218,7 @@ class ResidenceBook extends Component {
             </div>
           </div>
 
+          <p/>
           <h2>Contact Details</h2>
 
           <div className="row gtr-uniform">
@@ -232,28 +256,29 @@ class ResidenceBook extends Component {
             </div>
 
             <div className="col-6 col-12-xsmall">
-              <input placeholder="E-Mail" type="text" name="email" value={this.state.reservation.email} onChange={this.handleChange} required="required"/>
+              <input placeholder="E-Mail" type="text" name="email" value={this.state.reservation.email} onChange={this.handleChange} required="required" pattern=".+[@].+[.].+"/>
             </div>
 
           </div>
 
+          <p/>
           <h2>Legal terms & Data privacy</h2>
 
           <div className="row gtr-uniform">
 
             <div className="col-12">
-              <input type="checkbox" id="agreementAccepted" name="agreementAccepted" checked={this.state.reservation.agreementAccepted} onChange={this.handleChange} required="required"/>
+              <input type="checkbox" id="agreementAccepted" name="agreementAccepted" checked={this.state.reservation.agreementAccepted} onChange={this.handleChange}/>
               <label htmlFor="agreementAccepted">I agree to the booking terms and data privacy policy</label>
             </div>
 
-          </div>
+              <div className="col-12">
+                  <input type="hidden" name="residenceId" value={this.state.reservation.residenceId} />
+                  <input type="hidden" name="site" value={this.state.reservation.site} />
+                  <input type="hidden" name="locale" value={this.state.reservation.locale} onChange={this.handleChange} />
+                  <input type="submit" value="Submit" className="button primary"/>
+              </div>
 
-          <div className="">
-              <input type="hidden" name="residenceId" value={this.state.reservation.residenceId} />
-              <input type="hidden" name="site" value={this.state.reservation.site} />
-              <input type="hidden" name="locale" value={this.state.reservation.locale} onChange={this.handleChange} />
-              <input type="submit" value="Submit" />
-            </div>
+          </div>
 
         </form>
 
