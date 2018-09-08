@@ -38,7 +38,7 @@ class ResidenceService {
 
 	getResidenceReservations(id) {
 		return new Promise((resolve, reject) => {
-			fetch("http://localhost:3000/residences/"+id+"/reservations").then(res => {
+			fetch(__API__ + "/residences/"+id+"/reservations").then(res => {
 		        res.json().then(json => {
 		        	resolve(json.data);
 	          	})
