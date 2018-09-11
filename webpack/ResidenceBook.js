@@ -144,11 +144,6 @@ class ResidenceBook extends Component {
     this.setState({successModalIsOpen: false, errorModalIsOpen: false, validationModalIsOpen: false});
   }
 
-  /*closeSuccessModal() {
-    this.props.history.push('/residences'+this.state.reservation.residenceId);
-    //this.setState({successModalIsOpen: false, errorModalIsOpen: false});
-  }*/
-
   render() {
     return (
       <div id="residence-book-form" className="col-12-xlarge">
@@ -268,7 +263,9 @@ class ResidenceBook extends Component {
 
             <div className="col-12">
               <input type="checkbox" id="agreementAccepted" name="agreementAccepted" checked={this.state.reservation.agreementAccepted} onChange={this.handleChange}/>
-              <label htmlFor="agreementAccepted">I agree to the booking terms and data privacy policy</label>
+              <label htmlFor="agreementAccepted">
+                I agree to the <a target="_blank" href={this.props.general_terms_url}>general terms</a> and <a target="_blank" href={this.props.privacy_policy_url}>privacy policy</a>
+              </label>
             </div>
 
               <div className="col-12">
