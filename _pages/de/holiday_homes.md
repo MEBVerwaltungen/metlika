@@ -8,7 +8,7 @@ sort_order: 100
 <script type="text/javascript"
 		id="bundle"
 		locale="de"
-		general_terms_url="https://www.yahoo.de"
-		privacy_policy_url="https://www.google.de"
+		general_terms_url="/_pages/de/general_terms.html"
+		privacy_policy_url="/_pages/de/privacy_policy.html"
 		src="/assets/js/bundle.js"
 		charset="utf-8"></script>

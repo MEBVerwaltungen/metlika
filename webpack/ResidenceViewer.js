@@ -4,6 +4,7 @@ import {withRouter} from 'react-router';
 import {Link} from 'react-router-dom'
 import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
+import { translate, Trans } from 'react-i18next';
 
 class ResidenceViewer extends Component {
 
@@ -44,7 +45,9 @@ class ResidenceViewer extends Component {
                     />
                 </div>
                 <p>
-                    <Link to={`/residences/${this.state.residence.id}/book`}>Book now</Link>
+                    <Link to={`/residences/${this.state.residence.id}/book`}>
+                        { this.props.t('residence_page_cta', { framework: 'react-i18next' }) }
+                    </Link>
                 </p>
             </div>
         );
@@ -58,4 +61,4 @@ class ResidenceViewer extends Component {
 
 }
 
-export default withRouter(ResidenceViewer);
+export default withRouter(translate('common')(ResidenceViewer));
