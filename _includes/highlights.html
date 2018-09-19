@@ -1,21 +1,23 @@
 <section class="wrapper">
-	<div class="inner">
-		<header class="special">
-			<h2>{% translate highlights_title %}</h2>
-			<p>{% translate highlights_preamble %}</p>
-		</header>
-		<div class="highlights">
-			{% for highlight in site.data.highlights[page.language] %}
-			<section>
-				<div class="content">
-					<header>
-						<a href="#" class="icon {{ highlight.icon }}"><span class="label">Icon</span></a>
-						<h3>{{ highlight.title }}</h3>
-					</header>
-					<p>{{ highlight.description }}</p>
-				</div>
-			</section>
-			{% endfor %}
-		</div>
-	</div>
+    <div class="inner">
+        <header class="special">
+            <h2>{% translate highlights_title %}</h2>
+            <p>{% translate highlights_preamble %}</p>
+        </header>
+        <div class="highlights">
+            {% for highlight in site.data.highlights[page.language] %}
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="{{ highlight.page_url }}" class="icon {{ highlight.icon }}">
+                            <span class="label">Icon</span>
+                        </a>
+                        <h3>{{ highlight.title }}</h3>
+                    </header>
+                    <p>{{ highlight.description }}</p>
+                </div>
+            </section>
+            {% endfor %}
+        </div>
+    </div>
 </section>

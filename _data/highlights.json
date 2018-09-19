@@ -1,36 +1,42 @@
 {
-	"de" : [
-		{
-			"title": "Wandern und Fahrradfahren",
-			"icon": "fa-tree",
-			"description": "Genieß die Natur!"
-		},
-		{
-			"title": "Schwimmen und Wassersport",
-			"icon": "fa-tint",
-			"description": "Spaß für die ganze Familie!"
-		},
-		{
-			"title": "Essen und Trinken",
-			"icon": "fa-cutlery",
-			"description": "Eine kulinarisches Erlebnis!"
-		}
-	],
-	"en" : [
-		{
-			"title": "Hiking and biking",
-			"icon": "fa-tree",
-			"description": "Enjoy the nature"
-		},
-		{
-			"title": "Swimming and Watersports",
-			"icon": "fa-tint",
-			"description": "Fun for the entire family"
-		},
-		{
-			"title": "Food and Drink",
-			"icon": "fa-cutlery",
-			"description": "A culinary adventure!"
-		},
-	]
+  "de": [
+    {
+      "title": "Wandern und Fahrradfahren",
+      "icon": "fa-tree",
+      "description": "Genieß die Natur!",
+      "page_url": "_pages/de/hiking_biking.html"
+    },
+    {
+      "title": "Schwimmen und Wassersport",
+      "icon": "fa-tint",
+      "description": "Spaß für die ganze Familie!",
+      "page_url": "_pages/de/swimming.html"
+    },
+    {
+      "title": "Essen und Trinken",
+      "icon": "fa-cutlery",
+      "description": "Eine kulinarisches Erlebnis!",
+      "page_url": "_pages/de/food_drink.html"
+    }
+  ],
+  "en": [
+    {
+      "title": "Hiking and biking",
+      "icon": "fa-tree",
+      "description": "Enjoy the nature",
+      "page_url": "_pages/en/hiking_biking.html"
+    },
+    {
+      "title": "Swimming and Watersports",
+      "icon": "fa-tint",
+      "description": "Fun for the entire family",
+      "page_url": "_pages/en/swimming.html"
+    },
+    {
+      "title": "Food and Drink",
+      "icon": "fa-cutlery",
+      "description": "A culinary adventure!",
+      "page_url": "_pages/en/food_drink.html"
+    }
+  ]
 }
