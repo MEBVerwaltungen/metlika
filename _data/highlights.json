@@ -1,36 +1,36 @@
 {
 	"de" : [
 		{
-			"title": "Wandern",
+			"title": "Wandern und Fahrradfahren",
 			"icon": "fa-tree",
-			"description": "Geniß die Berge",
+			"description": "Genieß die Natur!"
 		},
 		{
-			"title": "Schwimmen",
+			"title": "Schwimmen und Wassersport",
 			"icon": "fa-tint",
-			"description": "Warmes wasser",
+			"description": "Spaß für die ganze Familie!"
 		},
 		{
-			"title": "Essen",
+			"title": "Essen und Trinken",
 			"icon": "fa-cutlery",
-			"description": "Regionale Küche",
-		},
+			"description": "Eine kulinarisches Erlebnis!"
+		}
 	],
 	"en" : [
 		{
-			"title": "Hike",
+			"title": "Hiking and biking",
 			"icon": "fa-tree",
-			"description": "Fabulous mountains",
+			"description": "Enjoy the nature"
 		},
 		{
-			"title": "Swim",
+			"title": "Swimming and Watersports",
 			"icon": "fa-tint",
-			"description": "Warm water",
+			"description": "Fun for the entire family"
 		},
 		{
-			"title": "Eat",
+			"title": "Food and Drink",
 			"icon": "fa-cutlery",
-			"description": "Regional food",
+			"description": "A culinary adventure!"
 		},
 	]
 }

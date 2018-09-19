@@ -259,7 +259,7 @@ hr {
   max-width: calc(100% - 6rem); }
   @media screen and (max-width: 480px) {
     .inner {
-      max-width: calc(100% - 3rem); } }
+      max-width: calc(100% - 1rem); } }
 
 /* Button */
 input[type="submit"],
@@ -2527,8 +2527,8 @@ body {
   background-size: cover;
   border-top: 0;
   display: -ms-flexbox;
-  height: 15rem !important;
-  min-height: 15rem;
+  height: 10rem !important;
+  min-height: 10rem;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -2691,7 +2691,7 @@ body {
   padding: 3rem; }
   @media screen and (max-width: 980px) {
     #main .content {
-      padding: 2rem; } }
+      padding: 1rem; } }
   @media screen and (max-width: 480px) {
     #main .content {
       padding: 1.5rem; } }

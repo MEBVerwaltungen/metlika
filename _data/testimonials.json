@@ -1,36 +1,36 @@
 {
 	"de" : [
 		{
-			"text": "Das Wasser war immer warm!",
-			"name": "Klaus",
-			"city": "München",
+			"text": "Die Aussicht von der riesigen Terrasse auf das Tal und die Berge ist einen Besuch wert.",
+			"name": "Natalia",
+			"city": "Bietigheim"
 		},
 		{
-			"text": "Die Sonne schien ununterbrochen!",
-			"name": "Angela",
-			"city": "München",
+			"text": "Das Haus ist sehr geräumig und bietet auch Platz für größere Gruppen.",
+			"name": "Florian",
+			"city": "München"
 		},
 		{
-			"text": "Ich liebe die Berge in Metlika!",
-			"name": "Bettina",
-			"city": "Berlin",
-		},
+			"text": "Wunderschöne Landschaft und ein modernes Neubauferienhaus.",
+			"name": "Maximilian",
+			"city": "Frankfurt"
+		}
 	],
 	"en" : [
 		{
-			"text": "Water was fantasic!",
-			"name": "Klaus",
-			"city": "Munich",
+			"text": "The terrace offers a spectacular view of the the valley and the mountains.",
+			"name": "Natalia",
+			"city": "Bietigheim"
 		},
 		{
-			"text": "Sun shined every day",
-			"name": "Angela",
-			"city": "Munich",
+			"text": "The house was very specious and perfect for larger groups.",
+			"name": "Florian",
+			"city": "München"
 		},
 		{
-			"text": "I love the mountains around Metlika!",
-			"name": "Bettina",
-			"city": "Berlin",
-		},
+			"text": "Breathtaking landscape and a new and modern holiday home.",
+			"name": "Maximilian",
+			"city": "Frankfurt"
+		}
 	]
 }

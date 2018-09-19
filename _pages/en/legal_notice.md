@@ -8,12 +8,11 @@ sort_order: 400
 
 **Responsible for the content of this site is:**
 
-Hans Milcinovic
+Margarete Milcinovic
 
 Lange Str. 54
-
 70174 Stuttgart
 
-**Telefon:** 0711-2261934
+**Phone:** +49 (0)711 2269527
 
-**E-Mail:** info@unije.de
+**E-mail:** info@metlika.eu
