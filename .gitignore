@@ -1,7 +1,7 @@
-.DS_Store
-.idea
+.jekyll-metadata
 _site
-.byebug_history
+.DS_Store
+bundle.js
+bundle.js.map
 node_modules
-assets/js/bundle.js
-assets/js/bundle.js.map
+.idea

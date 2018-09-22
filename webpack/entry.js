@@ -17,7 +17,7 @@ i18next.init({
     resources: {
         en: {
             common: {
-                residence_card_cta: 'Reservation inquiry',
+                residence_card_cta: 'View Deal',
                 residence_page_cta: 'Reservation inquiry',
                 booking_calendar_hint: 'Use the calendar above to select the check-in and check-out dates.',
                 booking_guests: 'Guests',
@@ -44,7 +44,7 @@ i18next.init({
         },
         de: {
             common: {
-                residence_card_cta: 'Buchungsanfrage',
+                residence_card_cta: 'Zum Angebot',
                 residence_page_cta: 'Buchungsanfrage',
                 booking_calendar_hint: 'Benutzen Sie den Kalender oben um Anreise- und Abreisetag zu wählen.',
                 booking_guests: 'Gäste',
