@@ -37,6 +37,7 @@ class ResidenceBook extends Component {
             dates: null,
             checkInDateString: "",
             checkOutDateString: "",
+            residence: {name: ""},
             reservation: {
                 checkIn: "",
                 checkOut: "",
@@ -128,12 +129,17 @@ class ResidenceBook extends Component {
     }
 
     componentDidMount() {
-        new ResidenceService(this.props.locale).getResidenceReservations(this.state.reservation.residenceId).then(reservations => {
+        let service = new ResidenceService(this.props.locale);
+        let id = this.state.reservation.residenceId;
+        service.getResidenceReservations(id).then(reservations => {
             var unavailable = reservations.map(function (reservation) {
                 var r = reservation.attributes;
                 return {state: 'unavailable', range: moment.range(moment(r.check_in), moment(r.check_out))};
             });
             this.setState({dateRanges: unavailable});
+        });
+        service.getResidence(id).then(residence => {
+            this.setState({residence: residence});
         });
     }
 
@@ -148,6 +154,7 @@ class ResidenceBook extends Component {
     render() {
         return (
             <div id="residence-book-form" className="col-12-xlarge">
+                <h1>{this.state.residence.name}</h1>
                 <form onSubmit={this.handleSubmit}>
                     <h2>Dates</h2>
                     <DateRangePicker

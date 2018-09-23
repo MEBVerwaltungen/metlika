@@ -1,9 +1,11 @@
 import React, {Component} from 'react';
 import ResidenceService from './ResidenceService'
+import ResidencePrices from './ResidencePrices'
 import {withRouter} from 'react-router';
 import {Link} from 'react-router-dom'
 import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
+import Remarkable from 'remarkable';
 import { translate, Trans } from 'react-i18next';
 
 class ResidenceViewer extends Component {
@@ -18,6 +20,7 @@ class ResidenceViewer extends Component {
 
     render() {
         let images = [];
+        let html_description;
         if (this.state.residence.images) {
             images = this.state.residence.images.map(i => (
                 {
@@ -26,10 +29,12 @@ class ResidenceViewer extends Component {
                     title: this.state.residence.name
                 }));
         }
+        if(this.state.residence){
+            html_description = new Remarkable().render(this.state.residence.description.text);
+        }
         return (
             <div>
                 <h1>{this.state.residence.name}</h1>
-                <p>{this.state.residence.description.text}</p>
                 <div>
                     <Lightbox
                         images={images}
@@ -44,8 +49,11 @@ class ResidenceViewer extends Component {
                         }}
                     />
                 </div>
+                <div dangerouslySetInnerHTML={{__html: html_description}} />
+                <h2>{ this.props.t('price_calendar', { framework: 'react-i18next' }) }</h2>
+                <ResidencePrices prices={this.state.residence.prices}/>
                 <p>
-                    <Link to={`/residences/${this.state.residence.id}/book`}>
+                    <Link className="button primary" to={`/residences/${this.state.residence.id}/book`}>
                         { this.props.t('residence_page_cta', { framework: 'react-i18next' }) }
                     </Link>
                 </p>

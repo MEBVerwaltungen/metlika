@@ -19,6 +19,9 @@ i18next.init({
             common: {
                 residence_card_cta: 'View Deal',
                 residence_page_cta: 'Reservation inquiry',
+                price_calendar: 'Price Calendar',
+                from_to: 'From/To',
+                price: 'Price',
                 booking_calendar_hint: 'Use the calendar above to select the check-in and check-out dates.',
                 booking_guests: 'Guests',
                 booking_adults: 'Adults',
@@ -46,6 +49,9 @@ i18next.init({
             common: {
                 residence_card_cta: 'Zum Angebot',
                 residence_page_cta: 'Buchungsanfrage',
+                price_calendar: 'Preiskalender',
+                from_to: 'Von/Bis',
+                price: 'Preis',
                 booking_calendar_hint: 'Benutzen Sie den Kalender oben um Anreise- und Abreisetag zu wählen.',
                 booking_guests: 'Gäste',
                 booking_adults: 'Erwachsene',
