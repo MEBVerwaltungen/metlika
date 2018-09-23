@@ -1,5 +1,5 @@
 ---
-title: Essen/Trinken
+title: Essen & Trinken
 layout: page
 sort_order: 160
 ---

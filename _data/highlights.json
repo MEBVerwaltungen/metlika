@@ -1,19 +1,19 @@
 {
   "de": [
     {
-      "title": "Wandern und Fahrradfahren",
+      "title": "Freiluftaktivitäten",
       "icon": "fa-tree",
       "description": "Genieß die Natur!",
-      "page_url": "_pages/de/hiking_biking.html"
+      "page_url": "_pages/de/outdoor.html"
     },
     {
-      "title": "Schwimmen und Wassersport",
+      "title": "Wassersport",
       "icon": "fa-tint",
       "description": "Spaß für die ganze Familie!",
-      "page_url": "_pages/de/swimming.html"
+      "page_url": "_pages/de/water_sports.html"
     },
     {
-      "title": "Essen und Trinken",
+      "title": "Essen & Trinken",
       "icon": "fa-cutlery",
       "description": "Eine kulinarisches Erlebnis!",
       "page_url": "_pages/de/food_drink.html"

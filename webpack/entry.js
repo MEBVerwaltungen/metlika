@@ -68,7 +68,7 @@ i18next.init({
                 booking_email: 'E-Mail',
                 booking_terms: 'AGB & DSE',
                 booking_submit: 'Abschicken',
-                booking_thank_you: 'Danke schön! Ihre Anfrage würde gespeichert, wir melden uns bald.',
+                booking_thank_you: 'Danke schön! Ihre Anfrage wurde gespeichert, wir melden uns bald.',
                 booking_error: 'Ojemine, etwas ist schief gelaufen. Bitte versuchen Sie es ernäut. Wenn es nicht besser wird, bitte ein E-Mail an support@support.com schicken.',
                 booking_error_dates: 'Sie haben Anreise- und Abreisetag nicht ausgewählt.',
                 booking_error_terms: 'Bitte bestätigen Sie, dass Sie die AGB und Datenschutzerklärung gelesen und akzeptiert haben.',

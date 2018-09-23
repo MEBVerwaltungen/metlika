@@ -1,5 +1,5 @@
 ---
-title: Wandern/Radfahren
+title: Freiluftaktivitäten
 layout: page
 sort_order: 130
 ---

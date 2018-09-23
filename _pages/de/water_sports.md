@@ -1,5 +1,5 @@
 ---
-title: Schwimmen/Wassersport
+title: Wassersport
 layout: page
 sort_order: 150
 ---
