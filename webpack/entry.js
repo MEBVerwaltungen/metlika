@@ -60,7 +60,7 @@ i18next.init({
                 booking_cell_phone: 'Handy',
                 booking_phone: 'Telefon',
                 booking_email: 'E-Mail',
-                booking_terms: 'AGB & Datenschutzerklärung',
+                booking_terms: 'AGB & DSE',
                 booking_submit: 'Abschicken',
                 booking_thank_you: 'Danke schön! Ihre Anfrage würde gespeichert, wir melden uns bald.',
                 booking_error: 'Ojemine, etwas ist schief gelaufen. Bitte versuchen Sie es ernäut. Wenn es nicht besser wird, bitte ein E-Mail an support@support.com schicken.',
