@@ -12,7 +12,7 @@ class ResidencePrices extends Component {
 
         if(this.props.prices){
             price_lines = this.props.prices.map(price =>
-                <tr>
+                <tr key={price.id}>
                     <td>{price.start_day}.{price.start_month}-{price.end_day}.{price.end_month}</td>
                     <td>€{price.price}</td>
                 </tr>
@@ -21,10 +21,12 @@ class ResidencePrices extends Component {
 
         return (
             <table>
-                <tr>
-                    <th>{ this.props.t('from_to', { framework: 'react-i18next' }) }</th>
-                    <th>{ this.props.t('price', { framework: 'react-i18next' }) }</th>
-                </tr>
+                <tbody>
+                    <tr>
+                        <th>{ this.props.t('from_to', { framework: 'react-i18next' }) }</th>
+                        <th>{ this.props.t('price', { framework: 'react-i18next' }) }</th>
+                    </tr>
+                </tbody>
                 {price_lines}
             </table>
         );

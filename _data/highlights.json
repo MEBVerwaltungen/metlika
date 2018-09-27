@@ -21,22 +21,22 @@
   ],
   "en": [
     {
-      "title": "Hiking and biking",
+      "title": "Outdoor activites",
       "icon": "fa-tree",
       "description": "Enjoy the nature",
-      "page_url": "_pages/en/hiking_biking.html"
+      "page_url": "#"
     },
     {
-      "title": "Swimming and Watersports",
+      "title": "Water sports",
       "icon": "fa-tint",
       "description": "Fun for the entire family",
-      "page_url": "_pages/en/swimming.html"
+      "page_url": "#"
     },
     {
       "title": "Food and Drink",
       "icon": "fa-cutlery",
       "description": "A culinary adventure!",
-      "page_url": "_pages/en/food_drink.html"
+      "page_url": "#"
     }
   ]
 }

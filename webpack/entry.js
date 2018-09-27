@@ -42,7 +42,8 @@ i18next.init({
                 booking_error: 'Oops, something went wrong! Please try again. If this continues please submit and email to support@support.com and include the error shown below.',
                 booking_error_dates: 'Please select check-in and check-out dates using the calendar',
                 booking_error_terms: 'Please read and accept the booking agreement and privacy policy before submitting the inquiry.',
-                booking_terms_accepted: 'I agree to the <1>general terms</1> and <3>privacy policy</3>'
+                booking_terms_accepted: 'I agree to the <1>general terms</1> and <3>privacy policy</3>',
+                loading: 'Fetching the latest offers, hold on...'
             },
         },
         de: {
@@ -72,7 +73,8 @@ i18next.init({
                 booking_error: 'Ojemine, etwas ist schief gelaufen. Bitte versuchen Sie es ernäut. Wenn es nicht besser wird, bitte ein E-Mail an support@support.com schicken.',
                 booking_error_dates: 'Sie haben Anreise- und Abreisetag nicht ausgewählt.',
                 booking_error_terms: 'Bitte bestätigen Sie, dass Sie die AGB und Datenschutzerklärung gelesen und akzeptiert haben.',
-                booking_terms_accepted: 'Ich akzeptiere die <1>AGB</1> und die <3>Datenschutzerklärung</3>'
+                booking_terms_accepted: 'Ich akzeptiere die <1>AGB</1> und die <3>Datenschutzerklärung</3>',
+                loading: 'Holen die Angebote, haben Sie etwas geduld...'
             },
         }
     }

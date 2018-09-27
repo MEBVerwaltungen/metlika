@@ -7,6 +7,7 @@ import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
 import Remarkable from 'remarkable';
 import { translate, Trans } from 'react-i18next';
+import Loader from "react-loader-spinner";
 
 class ResidenceViewer extends Component {
 
@@ -14,13 +15,26 @@ class ResidenceViewer extends Component {
         super(props);
         this.state = {
             galleryIsOpen: false,
-            residence: {description: {text: ''}}
+            residence: {description: {text: ''}},
+            residenceLoaded: false
         };
     }
 
     render() {
         let images = [];
         let html_description;
+        if(!this.state.residenceLoaded) {
+            return(
+                <div className="row spinner">
+                    <Loader
+                        type="ThreeDots"
+                        color="#003b46"
+                        height="100"
+                        width="100"
+                    />
+                </div>
+            );
+        }
         if (this.state.residence.images) {
             images = this.state.residence.images.map(i => (
                 {
@@ -63,7 +77,7 @@ class ResidenceViewer extends Component {
 
     componentDidMount() {
         new ResidenceService(this.props.locale).getResidence(this.props.match.params.residenceId).then(residence => {
-            this.setState({residence: residence});
+            this.setState({residence: residence, residenceLoaded: true});
         });
     }
 

@@ -94,9 +94,15 @@ class ResidenceBook extends Component {
 
     handleError(response) {
         this.setState({errorModalIsOpen: true, errorStatus: response.status});
-        response.text().then(text => {
-            this.setState({errorText: text});
-        })
+        if(response.text){
+            response.text().then(text => {
+                this.setState({errorText: text});
+            })
+        } else if(response.message) {
+            this.setState({errorText: response.message});
+        } else {
+            this.setState({errorText: "error: " + response});
+        }
     }
 
     handleSuccess(response) {
@@ -337,7 +343,7 @@ class ResidenceBook extends Component {
                     style={customModalStyles}
                 >
                     <p>
-                        {this.props.t('booking_thank_you', {framework: 'react-i18next'})}
+                        {this.props.t('booking_error', {framework: 'react-i18next'})}
                     </p>
                     <button onClick={this.closeModal}>Close</button>
                     <p>Status: {this.state.errorStatus}</p>
