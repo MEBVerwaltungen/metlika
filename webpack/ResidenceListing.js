@@ -14,6 +14,11 @@ class ResidenceListing extends Component {
         };
     }
 
+    getResidenceMinPrice(residence) {
+        const prices = residence.prices.map(p => p.price);
+        return prices.reduce((acc, curr) => curr > acc ? curr : acc);
+    }
+
     render() {
         if (!this.state.residencesLoaded) {
             return (
@@ -41,7 +46,11 @@ class ResidenceListing extends Component {
                                     <div className="residence-info">
                                         <h3>{r.name}</h3>
                                         <p>{r.description && r.description.title}</p>
-                                        <p><strong>Price from:</strong> €XX/night</p>
+                                        <p>
+                                            <Trans i18nKey="residence_card_price">
+                                                <strong>Price from</strong> €{this.getResidenceMinPrice(r)} per Night
+                                            </Trans>
+                                        </p>
                                         <Link className="button primary" to={`/residences/${r.id}`}>
                                             {this.props.t('residence_card_cta', {framework: 'react-i18next'})}
                                         </Link>

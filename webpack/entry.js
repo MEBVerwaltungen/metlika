@@ -18,6 +18,7 @@ i18next.init({
         en: {
             common: {
                 residence_card_cta: 'View Deal',
+                residence_card_price: '<0>Price from</0> €<2></2> per night',
                 residence_page_cta: 'Reservation inquiry',
                 price_calendar: 'Price Calendar',
                 from_to: 'From/To',
@@ -49,6 +50,7 @@ i18next.init({
         de: {
             common: {
                 residence_card_cta: 'Zum Angebot',
+                residence_card_price: '<0>Preis ab</0> €<2></2> pro Nacht',
                 residence_page_cta: 'Buchungsanfrage',
                 price_calendar: 'Preiskalender',
                 from_to: 'Von/Bis',
