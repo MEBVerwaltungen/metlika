@@ -25,9 +25,13 @@ The personal data consists of:
 * Cell phone number
 * Phone number
 * E-mail address
+* IP-Address
 
-We keep it so that we are able to contact you and send you an invoice for your stay. The data is 
-kept for 10 years according to German bookkeeping rules.
+We keep this information so that we are able to contact you and send you an invoice for your 
+stay. We also need it to simplify the process of tracking down technical errors that might occur.
+
+Except for your IP-address which is kept for 7 days, the data is  kept for 10 years according to 
+German bookkeeping rules.
 
 ## Securing your data
 

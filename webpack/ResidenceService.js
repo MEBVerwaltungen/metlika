@@ -63,7 +63,6 @@ class ResidenceService {
 
 	      	// Only keep values with correct locale
 	      	new_residence.description = new_residence.descriptions.find(d => d.locale === this.locale);
-	      	new_residence.agreement = new_residence.agreements.find(a => a.locale === this.locale);
 
 	      	delete new_residence.descriptions;
 	      	delete new_residence.agreements;
