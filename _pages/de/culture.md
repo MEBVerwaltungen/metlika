@@ -4,6 +4,8 @@ layout: page
 sort_order: 160
 ---
 
+![Carl](/images/test.jpg)
+
 Auf dem Mestni trg (der Stadtplatz), mit einer charakteristischen mittelalterlichen Form, befin-den sich 
 die wichtigsten Gebäude des historischen Teils der Stadt, Sv. Nikolaj-Kirche, das Com-menda-Haus und das 
 Provosthaus. In seinem zentralen Teil ist der Platz ziemlich breit und er-möglicht größere Ansammlungen 
