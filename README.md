@@ -36,7 +36,7 @@ Contains the texts (and their translations) for the start page plus a few terms 
 
 #### Update
 
-???
+Locate the file you wish to edit, for example [highlights.json](https://github.com/calleo/metlika/blob/master/_data/highlights.json). Click the pen-icon (edit) and perform the necessary changes using the editor. When you are finished, click on "Commit changes". Updated content will appear a few minutes later on the site.
 
 ### \_pages
 
