@@ -66,6 +66,14 @@ _layout_ should always be _page_. _sort_order_ determines where in the menu this
 
 Content is then inserted below the header using markdown-language. See [kramdown reference](https://kramdown.gettalong.org/quickref.html) for documentation on how to format content. Also see existing pages for examples.
 
+#### Insert image on page
+
+* Go to the [image](https://github.com/calleo/metlika/tree/master/images) directory
+* Click on "Upload files" and choose which files to upload from your computer
+* Click on "Commit changes"
+* Go to the page where the image should appear, click the pen-icon (edit)
+* Insert `![My File](/images/my_file.jpg)` where the image should appear. Replace "my_file.jpg" with the actual filename and "My File" with text describing the image.
+
 ## Images
 
 There are a few images on the web site, they are all stored in the folder [images](https://github.com/calleo/metlika/tree/master/images). To change an image, delete the file you whish to change and upload a new image with identical name as the one you deleted. Image has to be properly formatted before uploading it.
