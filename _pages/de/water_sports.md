@@ -41,4 +41,5 @@ Weitere Aktivitäten unweit von Metlika: Thermen, Hochseilgarten, kleine Ski-Geb
 Für mehr Informationen, Aktivitäten und Routen können Sie folgende Website besuchen:
 
 <http://www.metlika-turizem.si/en/home-en/>
+
 <https://www.belakrajina.si/en/>
